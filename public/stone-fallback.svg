@@ -1,0 +1,14 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171717"/>
+      <stop offset="1" stop-color="#262626"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <path d="M-20 180C170 90 310 260 470 210C640 150 760 250 920 220C1040 198 1130 120 1240 168" stroke="#FCD34D" stroke-opacity="0.25" stroke-width="4"/>
+  <path d="M-10 490C140 430 290 560 430 520C600 470 760 570 900 520C1030 474 1120 430 1210 470" stroke="#FEF3C7" stroke-opacity="0.18" stroke-width="5"/>
+  <path d="M60 760C230 690 370 780 530 760C680 742 850 820 1000 770C1090 740 1140 710 1220 730" stroke="#FCD34D" stroke-opacity="0.22" stroke-width="4"/>
+  <text x="600" y="470" text-anchor="middle" fill="#FDE68A" fill-opacity="0.75" font-family="Arial, sans-serif" font-size="56" font-weight="700">PattharHub</text>
+  <text x="600" y="520" text-anchor="middle" fill="#E5E7EB" fill-opacity="0.7" font-family="Arial, sans-serif" font-size="24">Premium Stone Visual</text>
+</svg>

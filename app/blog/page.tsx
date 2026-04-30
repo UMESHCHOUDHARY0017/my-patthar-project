@@ -22,12 +22,15 @@ export default function BlogPage() {
       </h1>
       <div className="mt-8 space-y-4">
         {posts.map((post) => (
-          <article key={post.title} className="rounded-2xl border border-white/10 bg-white/5 p-5">
+          <article key={post.title} className="luxury-panel rounded-2xl p-5">
             <h2 className="text-2xl font-semibold text-white">{post.title}</h2>
             <p className="mt-2 text-neutral-300">{post.excerpt}</p>
           </article>
         ))}
       </div>
+      <p className="mt-8 text-sm text-neutral-400">
+        New procurement and pricing insights are published every week for builders and sourcing teams.
+      </p>
     </main>
   );
 }
