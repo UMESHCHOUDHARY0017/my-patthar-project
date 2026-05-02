@@ -30,17 +30,6 @@ export function HomePage() {
   }, []);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCounts((prev) => ({
-        godowns: Math.min(320, prev.godowns + 8),
-        varieties: Math.min(500, prev.varieties + 12),
-        cities: Math.min(78, prev.cities + 2),
-      }));
-    }, 36);
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
     async function hydrateData() {
       try {
         const [stonesRes, statsRes] = await Promise.all([fetch("/api/stones"), fetch("/api/stats")]);
@@ -54,7 +43,7 @@ export function HomePage() {
           };
           setCounts({
             godowns: statsJson.data.godowns,
-            varieties: Math.max(statsJson.data.varieties, 500),
+            varieties: statsJson.data.varieties,
             cities: statsJson.data.cities,
           });
         }
