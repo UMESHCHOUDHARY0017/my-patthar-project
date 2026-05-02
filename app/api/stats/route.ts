@@ -6,9 +6,9 @@ export async function GET() {
   const stats = await getSubmissionStats();
   return NextResponse.json({
     data: {
-      godowns: Math.max(280, stats.godowns),
+      godowns: stats.godowns,
       varieties: stones.length,
-      cities: Math.max(62, stats.cities),
+      cities: stats.cities,
       inquiries: stats.inquiries,
     },
   });
